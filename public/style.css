@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #f8f8f8;
+    font-family: 'Roboto',sans-serif;
+}
+.chat-section{
+    width: 800px;
+    max-width: 90%;
+    background: rgb(247, 244, 244);
+    background-image: url(bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.msg-area{
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    
+}
+.header{
+    height: 70px;
+    width: 100%;
+    background: rgb(10, 133, 106);
+}
+textarea{
+    width: 80%;
+    border: none;
+    padding: 20px;
+    font-size: 16px;
+    outline: none;
+    background: #fbfbfb;
+    box-shadow: 2px 2px 13px rgba(0,0,0,0.234);
+    border-radius: 20px;
+}
+.btn{
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    background: rgb(10, 133, 106);
+    color: #f8f8f8;
+    outline: none;
+    border: none;
+    margin: 10px;
+    cursor: pointer;
+}
+.sending{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+.msg{
+    padding: 20px;
+    border-radius: 4px;
+    max-width: 300px;
+    position: relative;
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.234);
+    margin: 20px;
+}
+.left{
+    background: #ffffff; 
+    margin-right: auto;
+}
+.right{
+    background: rgb(169, 245, 162);
+    margin-left: auto;
+}
+.msg h4{
+    position: absolute;
+    top: 0px;
+    left: 2px;
+    color: rgb(136, 134, 134);
+    font-size: 13px;
+    padding: 4px;
+}
+.right h4{
+    left: 70%;
+}
