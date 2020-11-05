@@ -14,7 +14,7 @@ body{
     font-family: 'Roboto',sans-serif;
 }
 .chat-section{
-    width: 800px;
+    width: 700px;
     max-width: 90%;
     background: rgb(247, 244, 244);
     background-image: url(bg.png);
@@ -23,7 +23,7 @@ body{
     background-size: cover;
 }
 .msg-area{
-    height: 500px;
+    height: 400px;
     display: flex;
     flex-direction: column;
     overflow-y: auto;
@@ -33,6 +33,9 @@ body{
     height: 70px;
     width: 100%;
     background: rgb(10, 133, 106);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 textarea{
     width: 80%;
@@ -66,6 +69,7 @@ textarea{
     padding: 20px;
     border-radius: 4px;
     max-width: 300px;
+    min-width: 70px;
     position: relative;
     box-shadow: 1px 1px 1px rgba(0,0,0,0.234);
     margin: 20px;
@@ -80,7 +84,7 @@ textarea{
 }
 .msg h4{
     position: absolute;
-    top: 0px;
+    top: -22px;
     left: 2px;
     color: rgb(136, 134, 134);
     font-size: 13px;
@@ -88,4 +92,21 @@ textarea{
 }
 .right h4{
     left: 70%;
+}
+@media(max-width:500px){
+    .chat-section{
+        max-width: 100%;
+        height: 100vh; 
+    }
+    .msg-area{
+        height: 75%;
+    }   
+    .btn{
+        width: 55px;
+        height: 50px;
+        
+    }
+    textarea{
+        width: 85%;
+    }
 }
